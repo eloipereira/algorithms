@@ -1,0 +1,5 @@
+def min_cut(adj_list):
+    # contrac randomly
+    # recurse
+    # return value of min cut
+

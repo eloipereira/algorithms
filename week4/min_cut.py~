@@ -1,0 +1,17 @@
+import quicSort as c
+
+def get_adj_list_from_file():
+    g = open("kargerMinCut.txt", "r")
+    adj_list = {}
+    for line in g.read().split():
+        x, *y = line.split()
+        adj_list[x] = y
+    g.close()
+    return adj_list
+
+def main():
+    a = get_adj_list_from_file()
+    print(a[1])
+
+if __name__ == '__main__':
+  main()

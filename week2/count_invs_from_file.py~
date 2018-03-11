@@ -1,0 +1,4 @@
+with open(IntegerArray.txt) as f:
+    for line in f:
+        int_list = [int(i) for i in line]
+        print int_list[0]

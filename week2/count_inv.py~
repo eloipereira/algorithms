@@ -1,0 +1,12 @@
+
+
+def mergeSort(l):
+    n = floor(size(l))
+    l0 = mergeSort(l[:n])
+    l1 = mergeSort(l[n+1:])
+    return merge(l0,l1)
+
+
+def merge(l0,l1):
+    if (l0[0] <= l1[0]):
+        
